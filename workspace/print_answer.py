@@ -11,7 +11,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 def print_answer():
     df = pd.read_csv('../data/train_df_embedding.csv')
 
-    print("user: ")
+    print("user: ", end="")
     text = input()
 
     # 학습한 모델 사용해서 user_input에 대한 embedding 생성
@@ -44,5 +44,5 @@ def print_answer():
 #     pickle.dump(print_answer(), f)
 
 # function call
-# print_answer()
+print_answer()
 
